@@ -2,8 +2,6 @@ const menu = () =>{
     const menuBtn = document.querySelector('.menu-btn')
     const navbarLinks = document.querySelector('.navigation__items')
     const navbarLink = document.querySelectorAll('.navigation__item')
-    const navbar = document.querySelector('.navigation')
-
 
     let lastScrollTop = 0;
     let menuOpen = false
