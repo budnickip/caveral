@@ -1,0 +1,178 @@
+.baner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+   // padding: 100px;
+  //  box-sizing: border-box;
+    background: #7dad00, url('../assets/header.jpg');  /* fallback for old browsers */
+    background: -webkit-linear-gradient(132deg, #7dad00, #2f4858), url('../assets/header.jpg'); /* Chrome 10-25, Safari 5.1-6 */
+  //  background: linear-gradient(180deg, #061700, #52c234), url('../assets/header.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(132deg, #7dad00, #2f4858), url('../assets/header.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.baner-before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: var(--logoGreen, green);
+    animation: underParagraph;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.baner-after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: white;
+    animation: underParagraph;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+.baner-text{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    &__header{
+        font-size: 3em;
+        color: #fff;
+        background-color: var(--darker, black);
+        padding-bottom: 15px;
+        padding-right: 200px;
+        padding-left: 8px;
+        border-radius: 15px 0px 0px 15px;
+        margin: 8px 0px;
+    }
+
+    &__paragraph{
+        font-size: 1.2em;
+        color: #fff;
+        padding: 8px;
+        position: relative;
+        &:nth-child(1){
+            &::before{
+                @extend .baner-before;
+            }
+            &::after{
+                @extend .baner-after;
+            }
+        }
+        &:nth-child(2){
+            &::before{
+                @extend .baner-before;
+                animation-delay: 4s;
+            }
+            &::after{
+                @extend .baner-after;
+                animation-delay: 5.5s;
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                @extend .baner-before;
+                animation-delay: 7s;
+            }
+            &::after{
+                @extend .baner-after;
+                animation-delay: 8.5s;
+            }
+        }
+        &:nth-child(4){
+            &::before{
+                @extend .baner-before;
+                animation-delay: 10s;
+            }
+            &::after{
+                @extend .baner-after;
+                animation-delay: 11.5s;
+            }
+        }
+        
+    }
+
+    &__icon{
+        color: var(--logoBlue, green);
+    }
+}
+
+
+
+@keyframes underParagraph{
+    100%{
+        width: 100%;
+    }
+
+}
+
+
+
+.baner-text-P{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ //   background-color: var(--dark, black);
+    padding-right: 100px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ornaments{
+    color: var(--logoGreen, green);
+    font-weight: 700;
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .baner{
+        height:70vh;
+    }
+    .baner-text{
+        &__header{
+            padding-right: 8px;
+            font-size: 2em;
+        }
+    }
+    .baner-text-P{
+        padding-right: 8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .baner{
+        height: 70vh;
+    }
+    .baner-text{
+        &__header{
+            padding-right: 8px;
+            font-size: 2.5em;
+        }
+    }
+    .baner-text-P{
+        padding-right: 8px;
+    }
+}
