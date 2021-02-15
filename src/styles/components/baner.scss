@@ -57,6 +57,7 @@
         font-size: 3em;
         color: #fff;
         background-color: var(--darker, black);
+        font-family: 'Ubuntu', sans-serif;
         padding-bottom: 15px;
         padding-right: 200px;
         padding-left: 8px;
@@ -113,8 +114,34 @@
     &__icon{
         color: var(--logoBlue, green);
     }
+
+    &__typed-text{
+        color: var(--logoGreen, green);;
+        font-weight: 600;
+    }
+
+    &__cursor{
+        display: inline-block;
+        width: 3px;
+        background-color: #fff;
+        margin-top: 8px;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
+    }
+
+    &__cursor.typing{
+        animation: none;
+    }
 }
 
+
+@keyframes blink {
+    0%{ background-color: #fff;}
+    49%{ background-color: #fff;}
+    50%{ background-color: transparent;}
+    99%{ background-color: transparent;}
+    100%{ background-color: #fff;}
+}
 
 
 @keyframes underParagraph{
@@ -132,7 +159,7 @@
     flex-wrap: wrap;
     flex-direction: row;
  //   background-color: var(--dark, black);
-    padding-right: 100px;
+    //padding-right: 100px;
     border-radius: 15px 0px 0px 15px;
 }
 

@@ -1,0 +1,39 @@
+.about{
+    background-color: var(--light, white);
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -10vh;
+
+    &__header{
+        width: 100%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.8em;
+        color: var(--darker, black);
+        padding: 17px 0px 27px 15%;
+    }
+}
+
+.about-description{
+    width: 90%;
+    background-color: white;
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .about{
+        top: -5vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .about{
+        top: -5vh;
+    }
+}
