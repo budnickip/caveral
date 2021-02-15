@@ -170,11 +170,6 @@
     left: 0;
 }
 
-.ornaments{
-    color: var(--logoGreen, green);
-    font-weight: 700;
-}
-
 @media (min-width: 1px) and (max-width: 480px) {
     .baner{
         height:70vh;
@@ -182,7 +177,7 @@
     .baner-text{
         &__header{
             padding-right: 8px;
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
     .baner-text-P{
@@ -197,7 +192,7 @@
     .baner-text{
         &__header{
             padding-right: 8px;
-            font-size: 2.5em;
+            font-size: 1.8em;
         }
     }
     .baner-text-P{

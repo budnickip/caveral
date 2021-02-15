@@ -4,6 +4,11 @@ const hideNavbar = () => {
     window.addEventListener("scroll", function(){
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         // żeby na iphone przy odbiciu od góry nie chowała się nawigacja
+        if(window.pageYOffset > 2){
+            navbar.style.position="fixed";
+        }else{
+            navbar.style.position="static";
+        }
         if(window.pageYOffset > 200){
             if(scrollTop > lastScrollTop){
                 navbar.style.top="-100px";
