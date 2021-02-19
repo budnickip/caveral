@@ -107,6 +107,16 @@
     }
 }
 
+
+.customers__header, .employers__header, .offices__header{
+    margin-top: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    align-self: flex-end;
+}
 .counter-default{
     padding: 16px;
     display: flex;
