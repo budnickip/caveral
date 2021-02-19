@@ -100,16 +100,6 @@
                 animation-delay: 8.5s;
             }
         }
-        &:nth-child(4){
-            &::before{
-                @extend .baner-before;
-                animation-delay: 10s;
-            }
-            &::after{
-                @extend .baner-after;
-                animation-delay: 11.5s;
-            }
-        }
         
     }
 
@@ -174,7 +164,8 @@
 
 @media (min-width: 1px) and (max-width: 480px) {
     .baner{
-        height:70vh;
+        height:60vh;
+        background-attachment: unset;
     }
     .baner-text{
         &__header{
@@ -189,7 +180,8 @@
 
 @media (min-width: 481px) and (max-width: 768px){
     .baner{
-        height: 70vh;
+        height: 60vh;
+        background-attachment: unset;
     }
     .baner-text{
         &__header{
