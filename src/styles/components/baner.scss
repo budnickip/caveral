@@ -15,6 +15,7 @@
     background: linear-gradient(132deg, #7dad00, #2f4858), url('../assets/header.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-blend-mode: darken;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .baner-before{

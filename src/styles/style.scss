@@ -6,12 +6,14 @@
 @import './components/baner.scss';
 @import './components/about.scss';
 
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-family: 'Jost', sans-serif;
+ //   font-family: 'Jost', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
