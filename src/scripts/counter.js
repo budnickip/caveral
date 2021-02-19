@@ -12,7 +12,7 @@ const counter = () =>{
     let officesLoaded = false
     window.addEventListener('scroll',()=>{
         const year = document.querySelector('.about-counter__bigHeader')
-        const yearValue = 11;
+        const yearValue = new Date().getFullYear()-2010;
 
         if((year.getBoundingClientRect().top < window.innerHeight) && !yearloaded){
             yearloaded = true;

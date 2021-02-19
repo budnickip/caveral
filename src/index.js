@@ -6,6 +6,7 @@ import hideNavbar from './scripts/hideNavbar.js';
 import typing from './scripts/typing.js';
 import baner from './scripts/baner.js';
 import counter from './scripts/counter.js';
+import delayItems from './scripts/delayItems.js';
 
 
 menu()
@@ -13,3 +14,4 @@ hideNavbar()
 typing()
 baner()
 counter()
+delayItems()
