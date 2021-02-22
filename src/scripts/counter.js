@@ -69,7 +69,7 @@ const counter = () =>{
 
 
         const offices = document.querySelector('.offices__header')
-        const officesValue = 4;
+        const officesValue = 5;
 
         if((offices.getBoundingClientRect().top < window.innerHeight) && !officesLoaded){
             officesLoaded = true;
@@ -84,7 +84,7 @@ const counter = () =>{
                 if(officesDisplayed > officesValue){
                     clearInterval(officesInterval)
                 }
-            }, 450);
+            }, 400);
         }
 
     })

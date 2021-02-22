@@ -100,24 +100,30 @@
                </div>
              
                 <div class="about-description">
-                    <p class="about-description__paragraph">
-                        Spółka powstała na bazie doświadczenia, które od kilkunastu lat zdobywaliśmy pracując dla renomowanych firm i operatorów branży logistycznej.
-                    </p>
-                    <p class="about-description__paragraph">
-                        Nasza wiedza i znajomość branży pozwalają na obsługę klientów na najwyższym poziomie w każdej dziedzinie transportu.
-                    </p>
-                    <p class="about-description__paragraph">
-                        Caveral sp.j. została zarejestrowana w lutym 2010 roku w wyniku przekształcenia działalności prowadzonej od 2001 roku przez jednego ze wspólników.
-                    </p>
-                    <p class="about-description__paragraph">
-                        Obecnie spółka zajmuje się transportem i spedycją drogową na terenie UE, spedycją morską, agencją statków morskich, koordynowaniem spraw celnych, konfekcjonowaniem towarów sypkich, przeładunkami w portach morskich oraz na kolejowych przejściach granicznych.
-                    </p>
-                    <p class="about-description__paragraph">
-                        Naszą dumą jest wykwalifikowany zespół spedytorów, którzy czuwają nad realizacją zleceń klientów 24 h na dobę.
-                    </p>
-                    <p class="about-description__paragraph">
-                        Aby poznać, zrozumieć i sprostać wymaganiom, jakie stawiają przed nami nasi klienci oraz w celu zapewnienia najlepszej komunikacji, każdemu z klientów dedukujemy do współpracy jednego z naszych pracowników.
-                    </p>
+                    <div class="about-description1">
+                        <p class="about-description__paragraph">
+                            Spółka powstała na bazie doświadczenia, które od kilkunastu lat zdobywaliśmy pracując dla renomowanych firm i operatorów branży logistycznej.
+                        </p>
+                        <p class="about-description__paragraph">
+                            Nasza wiedza i znajomość branży pozwalają na obsługę klientów na najwyższym poziomie w każdej dziedzinie transportu.
+                        </p>
+                    </div>
+                    <div class="about-description2">
+                        <p class="about-description__paragraph">
+                            Caveral sp.j. została zarejestrowana w lutym 2010 roku w wyniku przekształcenia działalności prowadzonej od 2001 roku przez jednego ze wspólników.
+                        </p>
+                        <p class="about-description__paragraph">
+                            Obecnie spółka zajmuje się transportem i spedycją drogową na terenie UE, spedycją morską, agencją statków morskich, koordynowaniem spraw celnych, konfekcjonowaniem towarów sypkich, przeładunkami w portach morskich oraz na kolejowych przejściach granicznych.
+                        </p>
+                    </div>
+                    <div class="about-description3">
+                        <p class="about-description__paragraph">
+                            Naszą dumą jest wykwalifikowany zespół spedytorów, którzy czuwają nad realizacją zleceń klientów 24 h na dobę.
+                        </p>
+                        <p class="about-description__paragraph">
+                            Aby poznać, zrozumieć i sprostać wymaganiom, jakie stawiają przed nami nasi klienci oraz w celu zapewnienia najlepszej komunikacji, każdemu z klientów dedukujemy do współpracy jednego z naszych pracowników.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="row about-counter">
@@ -153,7 +159,7 @@
                             0
                         </p>
                         <p class="about-counter__paragraph">
-                            miasta
+                            miast
                         </p>
                     </div>
                 </div>
@@ -185,7 +191,44 @@
             </div>
         </section>
         <section id="contact" class="contact">
-
+            <h3 class="contact__header">Kontakt</h3>
+            <div class="contact-box">
+                <div class="contact-details">
+                    <ul class="contact-details__items">
+                        <li id="contact-szczecin" class="contact-details__item activeCity">Szczecin</li>
+                        <li id="contact-wroclaw" class="contact-details__item">Wrocław</li>
+                        <li id="contact-gdansk" class="contact-details__item">Gdańsk</li>
+                        <li id="contact-lodz" class="contact-details__item">Łódź</li>
+                        <li id="contact-holandia" class="contact-details__item">Holandia</li>
+                    </ul>
+                    <div class="contact-text">
+                        <span class="fas fa-paper-plane"></span>
+                        <p class="contact-text__paragraph">Please describe your question.</p>
+                        <p class="contact-text__paragraph">Send me a message and I will</p>
+                        <p class="contact-text__paragraph">answer you as soon as possible!</p>
+                    </div>
+                    <div class="contact-adress">
+                        <a href="tel:503758919"><span class="fas fa-phone-square-alt contact-adress__icon"></span></a>
+                        <a href="https://www.linkedin.com/in/patryk-budnicki-a94456205/" target="_blank" rel="nofollow"><span class="fab fa-linkedin contact-adress__icon"></span></a>
+                        <a href="https://github.com/budnickip" target="_blank" rel="nofollow"><span class="fab fa-github-square contact-adress__icon"></span></a>
+                        <a href="https://www.facebook.com/patrykbudnickizs" target="_blank" rel="nofollow"><span class="fab fa-facebook-square contact-adress__icon"></span></a>
+                        <p class="contact-adress__paragraphB">Patryk Budnicki</p>
+                        <p class="contact-adress__paragraphB">Poland, Szczecin</p>
+                        <a class="contact-adress__link" href="tel:+48503758919">+48 503 758 919</a>
+                        <a class="contact-adress__link" href="mailto:p.budnicki95@gmail.com">p.budnicki95@gmail.com</a>
+                    </div>
+                </div>
+               <div class="contact-form">
+                    <h4 class="contact-form__header">Porozmawiajmy</h4>
+                    <form class="contact-form__form" name="contact_form">
+                        <input class="contact-form__input" type="text" name="name" id="name" placeholder="Imie" required>
+                        <input class="contact-form__input" type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input class="contact-form__input" type="text" name="topic" id="topic" placeholder="Temat">
+                        <textarea class="contact-form__textarea" name="message" id="message" placeholder="Wiadomość"></textarea>
+                        <button class="contact-form__button" type="submit">Wyślij</button>
+                    </form>
+                </div> 
+            </div>
         </section>
     </main>
    

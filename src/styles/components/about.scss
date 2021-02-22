@@ -72,6 +72,17 @@
     flex-grow: 1;
 }
 
+.about-description1, .about-description2, .about-description3{
+    padding: 1px 0px;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.activeAbout{
+    transform: translateX(0px);
+}
+
 .about-counter{
     width: 100%;
     background-color: var(--darker, blue);
