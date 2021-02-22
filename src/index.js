@@ -8,6 +8,7 @@ import baner from './scripts/baner.js';
 import counter from './scripts/counter.js';
 import delayItems from './scripts/delayItems.js';
 import contactNav from './scripts/contactNav.js';
+import cookies from './scripts/cookies.js';
 
 menu()
 hideNavbar()
@@ -16,3 +17,4 @@ baner()
 counter()
 delayItems()
 contactNav()
+cookies()
