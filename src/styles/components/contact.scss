@@ -37,7 +37,6 @@
 .contact-details{
     background-color: var(--counterLight, orange);
   /*  width: 450px; */
-    padding-bottom: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +46,7 @@
         content: '';
         position: absolute;
         right: -20px;
-        top: 32px;
+        top: 484px;
         width: 40px;
         height: 40px;
         background-color: var(--counterLight, orange);
@@ -375,7 +374,7 @@
         grid-template-columns: 100%;
     }
     .contact-text{
-        padding: 0px 0px 6em 34px;
+        padding: 0px 0px 0em 34px;
     }
     .contact-adress{
         padding-left: 34px;
@@ -391,6 +390,15 @@
     }
     .tricky-line{
         display: none;
+    }
+    .contact-photo{
+        &__photo{
+            transform: translate(8px, 8px);
+        }
+    
+        &__img{
+            transform: translate(-8px, -8px);
+        }
     }
 }
 
@@ -413,7 +421,7 @@
         grid-template-columns: 100%;
     }
     .contact-text{
-        padding: 0px 0px 6em 34px;
+        padding: 0px 0px 0em 34px;
     }
     .fa-paper-plane{
         font-size: 30px;
