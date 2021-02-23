@@ -10,6 +10,8 @@ import delayItems from './scripts/delayItems.js';
 import contactNav from './scripts/contactNav.js';
 import cookies from './scripts/cookies.js';
 import scrollingTop from './scripts/scrollingTop.js';
+import sendingMail from './scripts/sendingMail.js'
+import validateForm from './scripts/validateForm.js'
 
 menu()
 hideNavbar()
@@ -20,3 +22,5 @@ delayItems()
 contactNav()
 cookies()
 scrollingTop()
+sendingMail()
+validateForm()
