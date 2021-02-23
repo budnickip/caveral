@@ -9,6 +9,7 @@ import counter from './scripts/counter.js';
 import delayItems from './scripts/delayItems.js';
 import contactNav from './scripts/contactNav.js';
 import cookies from './scripts/cookies.js';
+import scrollingTop from './scripts/scrollingTop.js';
 
 menu()
 hideNavbar()
@@ -18,3 +19,4 @@ counter()
 delayItems()
 contactNav()
 cookies()
+scrollingTop()
