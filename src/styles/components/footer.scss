@@ -38,19 +38,24 @@
 .footer-member{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 24px 0px;
     &__photo{
         height: 100px;
         max-width: 300px;
+        margin: 1em;
         &:nth-child(even){
             opacity: 0.3;
         }
     }
 
     &__paragraph{
+        width: 100%;
+        text-align: center;
         color: var(--counterLighter, blue);
+        margin-bottom: 1em;
     }
 }
 
@@ -70,6 +75,7 @@
     align-items: center;
 
     &__button{
+        margin-right: 1em;
         border: 1px solid var(--logoGreen, green);
         border-radius: 15px;
         padding: 8px 16px;

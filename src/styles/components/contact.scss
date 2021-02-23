@@ -221,6 +221,7 @@
 
 .finance{
     width: 90%;
+    z-index: 6;
 }
 
 .contact-adress{
@@ -383,7 +384,7 @@
         font-family: 'Ubuntu', sans-serif;
     }
     .contact-form__header{
-        padding: 36px 0px 2em 36px;
+        padding: 36px 0px 2em 18px;
     }
     .contact-form__form{
         padding: 0px 34px;
@@ -434,7 +435,7 @@
         font-family: 'Ubuntu', sans-serif;
     }
     .contact-form__header{
-        padding: 36px 0px 2em 36px;
+        padding: 36px 0px 2em 18px;
     }
     .contact-form__form{
         padding: 0px 34px;
